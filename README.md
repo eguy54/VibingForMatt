@@ -1,15 +1,27 @@
-# Vibe: Term, Not Tool
+# Maze Builder (Streamlit)
 
-This is a small Streamlit app built from the chat context only.
+This app generates playable mazes and can solve them on demand.
 
-## What it shows
-- A definition of "vibe" from the chat
-- The original conversation in chat format
-- A quick clarifier (tool vs term)
-- A simple natural-language prompt input
+## User inputs
+- Difficulty: Easy, Medium, Hard
+- Width and height
+- Seed (set 0 for random)
+
+## Toggle options
+- Allow loops
+- Add room areas
+- Vertical symmetry
+- Multiple exits
+- Allow diagonal solve moves
+
+## Actions
+- Generate Maze: builds a new maze from the selected settings
+- Solve: overlays the shortest path in blue
 
 ## Run locally
-1. Install dependencies:
+1. Activate the virtual environment:
+   .\\.venv\\Scripts\\Activate.ps1
+2. Install dependencies (if needed):
    pip install -r requirements.txt
-2. Start the app:
+3. Run:
    streamlit run app.py
